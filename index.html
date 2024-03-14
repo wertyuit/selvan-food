@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>SimpleSheets Shopping Cart Demo</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="site-contaner">
+
+
+    <header class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+      <div class="wrap"></div>
+      <section id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="#hero">
+                <h1><span>S</span><span>E</span>LVAN</h1>
+              </a>
+            </div>
+            <div class="nav-list">
+              <div class="hamburger">
+    
+                <div class="bar"></div>
+              </div>
+              <ul>
+                <li><a href="#hero" data-after="Home">Home</a></li>
+                <li><a href="#food" data-after="food">Food</a></li>
+                <li><a href="#contact" data-after="Contact">Contact</a></li>
+                <li><a href="#footer" data-after="footer">Footer</a></li>
+                <li>
+        <div style="color: white; font-size: 20px;" class="simplecart_area">
+          <div class="simplecart_cart">
+            <span class="showCart">
+          <span class="fa fa-shopping-cart"></span>
+            <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
+            <span class="dropdown fa fa-chevron-circle-down"></span>
+            </span>
+            <button style="width: 50px; height: 30px;" class="simpleCart_checkout" style="background-color: rgb(98, 209, 224);color: black;">🛒</button>
+            <div id="cartPopover" style="display:none">
+              <div class="simpleCart_items"></div>
+            </div>
+          </div>
+        </div></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="hero">
+  <div class="hero container">
+    <div>
+      <h1>Hello, <span></span></h1>
+      <h1>My Name is <span></span></h1>
+      <h1>SELVAN</h1>
+      <a href="#food" data-after="food" type="button" class="cta">FOOD</a>
+    </div>
+  </div>
+</section>
+<div  id="food" style="font-size: 17px; align-content: center; align-items: center; height: 60px; width: 100%; background-color: grey;font-family:'Trebuchet MS;" class="service-top">
+  <h1 id="food" data-after="food" style="position: relative; font-family:'Trebuchet MS;" class="section-title">F<span>OO</span>D</h1>
+</div>
+
+<div style="background-image:url(l.jpg)" class="site-inner">
+  <div class="wrap">
+
+    <div id="products" class="products">
+
+      <script id="hr-template" type="text/x-handlebars-template">
+        <div style="align-items: center; justify-content: center; display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px; width: 100%; height: auto; flex-wrap: wrap;background-color: grey solid 3px;margin-right: 10px;" class="column one-third">
+          <div style=" box-shadow: 7px 2px 2px black; background-color: white; border-radius: 30px; flex-basis: 300px; border: 10px solid white; width: 570px;height: 640px;" class="simpleCart_shelfItem item">
+            <div class="item_image"><img style="justify-content: center; border-top-left-radius: 30px;border-top-right-radius: 30px;width: 500px;height: 490px; border: 2px solid black;;" src="{{cells.Image}}"></div>
+            <h2 style="font-size: 20px;"  class="item_name">{{cells.Name}}</h2>
+            <div style="font-size: 13px;"  class="item_description">{{cells.Description}}</div>
+            <div style="margin-top:10px;">
+              <button style="width: 60px;height: 60px; position: relative; left: 435px; top: 18px; border:2px solid rgb(176, 171, 171);" href="javascript:;" class="item_add"><img style="width: 60px;height: 60px;border-radius: 65%;" src="p.jpg"></button>
+              <span style="font-size: 23px; left: -50px;position: relative;" class="item_price">${{cells.Price}}</span>
+              
+            </div>
+          </div>
+        </div><div style="height: 30px;width: 100%;background-image: url(l.jpg;)">
+
+</div>
+      </script><br>
+
+    </div>
+
+  </div>
+</div>
+
+
+<section id="services">
+    
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 style="font-family:'Trebuchet MS;" class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1><a href="tel:+212645145676">
+            <h2>+212 645145676</h2></a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <a href="mailto:soufianesidki20@gmail.com">
+            <h2>soufianesidki20@gmail.com</h2></a>
+          </div>
+        </div>
+        <div class="contact-item">
+          
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1><a href="https://www.google.com/search?q=rahma+1+bloc+9&sca_esv=4b3e726407594cc1&sxsrf=ACQVn0_u1bnvwpMmWq_krRnYItii2IRi1A%3A1710241883575&ei=WzjwZZ_cIqy6i-gP2-engAc&ved=0ahUKEwjf9cy_y-6EAxUs3QIHHdvzCXAQ4dUDCBA&uact=5&oq=rahma+1+bloc+9&gs_lp=Egxnd3Mtd2l6LXNlcnAiDnJhaG1hIDEgYmxvYyA5MgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwVI5kZQ0wxY0kNwBngAkAEAmAGfAaABxgOqAQMwLjO4AQPIAQD4AQGYAgigAsQCwgIJEAAYBxgeGLADwgILEAAYBxgeGA8YsAPCAgYQABgWGB7CAggQLhgWGB4YCsICCBAAGBYYHhgPwgICECaYAwCIBgGQBgqSBwM2LjKgB_sL&sclient=gws-wiz-serp&lqi=Cg5yYWhtYSAxIGJsb2MgOVoQIg5yYWhtYSAxIGJsb2MgOZIBDG5laWdoYm9yaG9vZKoBSxABKhIiDnJhaG1hIDEgYmxvYyA5KDYyHxABIhuRtzNQdzkOCQKw79CSHW_14R1whf9yJzXUqNMyEhACIg5yYWhtYSAxIGJsb2MgOQ#rlimm=13120241986732734597">
+            <h2>morocco, casablanc, rahma1</h2>
+          </div>
+        </div>
+      </div></a>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+</div>
+  <!-- Footer -->
+  <section id="footer" data-after="About">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>SE</span>LVAN</h1>
+      </div>
+      <h2>Please contact us on my contact</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/profile.php?id=61553890708434"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/its_soufiane_sidki?igsh=YzljYTk1ODg3Zg=="><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2024 Arfan. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+    <script src="app.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/simpleCart.min.js"></script>
+    <script src="js/handlebars.min.js"></script>
+    <script src="js/sheetrock.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </div>
+
+</body>
+
+</html>
